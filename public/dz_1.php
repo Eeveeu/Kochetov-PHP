@@ -5,7 +5,7 @@
     
     <style>
         body {
-            background-color: black; /* Цвет фона */
+            background-color: black; /* фон *//
             color: white;  
             font-family: Arial;
         }
@@ -23,14 +23,14 @@ $middlename = "андреевич";
 //up 
 
 $lastname = mb_convert_case($lastname, MB_CASE_TITLE, "UTF-8");
-// Берём первую букву имени и отчества, делаем заглавными
+//первая буква имени и отч, делает заглавными
 $firstInitial = mb_strtoupper(mb_substr($firstname, 0, 1));
 $middleInitial = mb_strtoupper(mb_substr($middlename, 0, 1));
 
-// Склеиваем результат
+//склейка
 $result = $lastname . " " . $firstInitial . "." . $middleInitial . ".";
 
-// Выводим результат
+//результат
 echo "<br>" . $result;
 echo "<br>";
 
@@ -47,14 +47,14 @@ echo "<br>";
 for ($month = 1; $month <= 12; $month++) {
     //числа с 1 по 20
     for ($day = 1; $day <= 20; $day++) {
-        // Создаём дату в формате ГГГГ-ММ-ДД
+        // дата
         $dateStr = sprintf('2021-%02d-%02d', $month, $day);
 
         //день недели (6 — это суббота)
         $dayOfWeek = date('w', strtotime($dateStr));
 
         if ($dayOfWeek == 6) {
-            // выводим субботу
+            //выводим субботу
             echo date('d.m.Y', strtotime($dateStr)) . "<br>";
         }
     }
