@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    
-    <style>
-        body {
-            background-color: black; /* фон *//
-            color: white;  
-            font-family: Arial;
-        }
-    </style>
-</head>
-<body>
-
 <?php
 header("Content-Type: text/html; charset=utf-8");
 echo "hello world";
