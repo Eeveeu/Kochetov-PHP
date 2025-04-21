@@ -33,6 +33,7 @@ $result = $lastname . " " . $firstInitial . "." . $middleInitial . ".";
 // Выводим результат
 echo "<br>" . $result;
 echo "<br>";
+
 echo "<br>";
 echo "<br>";
 
