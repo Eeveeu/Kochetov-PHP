@@ -1,3 +1,3 @@
 <?php
-header("Location: dz_1.php");
+header("Location: dz_3.php");
 exit;
